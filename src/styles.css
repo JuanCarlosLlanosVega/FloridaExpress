@@ -1,0 +1,871 @@
+
+
+/* styles.css */
+
+/* Estilos globales */
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden; /* Evita el scroll horizontal en pantallas pequeñas */
+}
+
+/* Estilos para la página Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajustes responsivos para la página Home */
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+  }
+
+  .hero,
+  .about {
+    width: 100%;
+  }
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color:rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+}
+
+/* Estilo del logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Estilo del ícono de menú */
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 500px) {
+  .logo-text {
+    display: none; /* Oculta el texto en pantallas pequeñas */
+  }
+
+  .logo-image {
+    height: 35px; /* Ajusta el tamaño del logo para que se vea bien */
+  }
+
+  .menu-icon {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Estilo del menú móvil */
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Estilo responsivo para pantallas móviles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Mostrar en vista móvil */
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Menú de navegación */
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Ajuste de distancia entre botones */
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.hero-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Sección Hero */
+/* Estilos para la sección Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Navegación dentro de Hero */
+.hero-nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces de navegación */
+.hero-nav a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para los botones */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-red,
+.btn-gray {
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.btn-red {
+  background-color: #8B0000;
+}
+
+.btn-gray {
+  background-color: gray;
+}
+
+.btn-red:hover,
+.btn-gray:hover {
+  opacity: 0.9;
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 10px;
+  }
+
+  .hero-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-nav a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-red,
+  .btn-gray {
+    width: 90%;
+    padding: 12px;
+  }
+}
+
+
+/* Estilo del pie de página */
+/*
+/* Estilos generales para el footer */
+/* Estilos generales del footer */
+.footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Estilo de la sección de ubicaciones */
+.locations {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo de la sección de créditos */
+.credits {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Indicadores del footer (puntos) */
+.footer-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.indicator:hover {
+  background-color: #888;
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .credits {
+    font-size: 0.8rem;
+  }
+
+  .footer-indicators {
+    gap: 8px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+/* Estilo para los íconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #888;
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .locations {
+    font-size: 1rem;
+  }
+
+  .credits {
+    font-size: 0.8rem;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hero-nav {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+  .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+/*nuevos */
+
+/* Contenedor principal de la sección Admin */
+.admin-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título de la sección */
+.admin-container h2 {
+  color: #8B0000;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Contenedor de los botones */
+.admin-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+/* Estilo para los botones de administración */
+.btn-admin {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1E3A8A;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icono dentro del botón */
+.btn-admin i {
+  font-size: 1.2rem;
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.btn-admin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 10px;
+  }
+
+  .admin-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .admin-buttons {
+    grid-template-columns: 1fr; /* Los botones ocupan toda la pantalla en móvil */
+    gap: 10px;
+  }
+
+  .btn-admin {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/*NUEVO PARA FORMULARIO FLOTA*/
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*
+h2 {
+  text-align: center;
+  color: #333;
+}
+  */
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+/*
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+*/
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+.required {
+  color: red;
+}
+/*
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+*/
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+  .btn-submit {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Contenedor del formulario de registro de flota */
+.registro-flota-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.registro-title {
+  text-align: center;
+  color: #8B0000;
+  margin-bottom: 20px;
+}
+
+/* Grupo de formulario */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input y Select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botón de envío */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .registro-flota-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+  }
+
+  .btn-submit {
+    padding: 10px;
+  }
+}
+/*ESTILOS PARA REGISTRAR CONDUCTOR*/
+
+/* Contenedor del formulario */
+.registro-conductor-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.registro-conductor-container h2 {
+  text-align: center;
+  color: #8B0000;
+  margin-bottom: 20px;
+}
+
+/* Grupo de formulario */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input y Select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botón de envío */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .registro-conductor-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  input,
+  select {
+    padding: 8px;
+  }
+
+  .btn-submit {
+    padding: 10px;
+  }
+}
+/*NUEVO SABADO 16 NOV*/ 
+
+.dropdown-menu {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.dropdown-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* ESTILOS DEL MODAL*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+/*PARA MODAL ELIMINAR*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+/*TYYY*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* SCROLL para deslizar el MODAL*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 80vh; /* Altura máxima del modal */
+  overflow-y: auto; /* Permitir scroll vertical */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* estilo de RUTAS FORMULARIO*/
+
+.registro-rutas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.registro-rutas-form {
+  width: 50%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registro-rutas-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.registro-rutas-form input,
+.registro-rutas-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
