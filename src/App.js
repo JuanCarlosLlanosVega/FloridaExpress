@@ -55,6 +55,8 @@ import ListaConductores from './components/ListaConductores';
 import ListaFlotas from './components/ListaFlotas';
 import RegistroRutas from './components/RegistroRutas';
 import ListaRutas from './components/ListaRutas';
+import RegistroHorario from './components/RegistroHorario';
+import ListaHorarios from './components/ListaHorarios';
 
 
 import Home from './components/Home';
@@ -72,6 +74,9 @@ const App = () => {
         <Route path="/lista-conductores" element={<ListaConductores />} />
         <Route path="/registro-rutas" element={<RegistroRutas />} />
         <Route path="/lista-rutas" element={<ListaRutas />} />
+        <Route path="/registro-horario" element={<RegistroHorario />} />
+        <Route path="/lista-horarios" element={<ListaHorarios />} />
+
       </Routes>
       <Footer />
     </Router>
