@@ -60,6 +60,7 @@ import ListaHorarios from './components/ListaHorarios';
 import Viajes from './components/Viajes';
 
 import ViajeFlota from './components/ViajeFlota';
+import SeleccionAsientos from './components/SeleccionAsientos';
 
 
 
@@ -83,6 +84,7 @@ const App = () => {
         <Route path="/lista-horarios" element={<ListaHorarios />} />
         <Route path="/viajes" element={<Viajes />} />
         <Route path="/viajeFlota" element={<ViajeFlota />} />
+        <Route path="/seleccionAsientos" element={<SeleccionAsientos />} />
 
       </Routes>
       <Footer />
