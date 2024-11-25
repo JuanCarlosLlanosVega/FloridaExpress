@@ -35,7 +35,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 20px;
   background-color:rgba(0, 0, 0, 0.8);
   color: white;
@@ -46,6 +46,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  
 }
 
 .logo-image {
@@ -58,6 +59,9 @@ body {
   font-weight: bold;
   white-space: nowrap;
 }
+
+
+
 
 /* Estilo del ícono de menú */
 .menu-icon {
@@ -176,6 +180,13 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
+  width: 100vw; /* Extiende el ancho al 100% de la ventana */
+  height: 100vh; /* Extiende la altura al 100% de la ventana */
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEZ6ld_-ljQFWxMaVgiaIjrEinahna81b6PcRVMZTxAUwBydm42MTdjXLP6299D0OKDqPkUUfZr9YszZ67u_d4q9mbTyzNFsTrUrH_I7qN119cuBEUugbf-DSIgCg1i1rWNH7f9vQbjgGa/s640/14A1439.jpg'); /* Asegúrate de poner aquí la ruta de tu imagen */
+  background-size: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat;
+   
 }
 
 /* Navegación dentro de Hero */
@@ -183,14 +194,15 @@ body {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  margin-top: -200px;
 }
 
 /* Estilos para los enlaces de navegación */
 .hero-nav a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 17px 12px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   transition: background-color 0.3s ease;

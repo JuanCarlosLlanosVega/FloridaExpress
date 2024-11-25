@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -22,8 +24,14 @@ const Hero = () => {
         <a href="#">Contáctenos</a>
       </nav>
       <div className="hero-buttons">
+        {/* Redirige a la página viajes */}
+        <Link to="/viajes" className="btn-red">Compre su pasaje aquí</Link>
+
+        <Link to="/rastreo" className="btn-gray">Rastree su envío aquí</Link>
+        {/*
         <a href="/compra" className="btn-red">Compre su pasaje aquí</a>
         <a href="/rastreo" className="btn-gray">Rastree su envío aquí</a>
+        */}
       </div>
     </section>
   );

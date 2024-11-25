@@ -57,6 +57,11 @@ import RegistroRutas from './components/RegistroRutas';
 import ListaRutas from './components/ListaRutas';
 import RegistroHorario from './components/RegistroHorario';
 import ListaHorarios from './components/ListaHorarios';
+import Viajes from './components/Viajes';
+
+import ViajeFlota from './components/ViajeFlota';
+
+
 
 
 import Home from './components/Home';
@@ -76,6 +81,8 @@ const App = () => {
         <Route path="/lista-rutas" element={<ListaRutas />} />
         <Route path="/registro-horario" element={<RegistroHorario />} />
         <Route path="/lista-horarios" element={<ListaHorarios />} />
+        <Route path="/viajes" element={<Viajes />} />
+        <Route path="/viajeFlota" element={<ViajeFlota />} />
 
       </Routes>
       <Footer />
