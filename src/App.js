@@ -62,10 +62,12 @@ import Viajes from './components/Viajes';
 import ViajeFlota from './components/ViajeFlota';
 import SeleccionAsientos from './components/SeleccionAsientos';
 
-
+import Transaccion from './components/Transaccion';
 
 
 import Home from './components/Home';
+import VerBus from './components/verBus';
+
 
 const App = () => {
   return (
@@ -85,6 +87,10 @@ const App = () => {
         <Route path="/viajes" element={<Viajes />} />
         <Route path="/viajeFlota" element={<ViajeFlota />} />
         <Route path="/seleccionAsientos" element={<SeleccionAsientos />} />
+        <Route path="/verBus" element={<VerBus />} />
+        <Route path="/Transaccion" element={<Transaccion />} />
+       
+
 
       </Routes>
       <Footer />

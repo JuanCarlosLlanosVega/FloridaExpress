@@ -68,6 +68,8 @@ const db = getFirestore(app);
 export default db;
 */
 // firebaseConfig.js
+
+/*
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
@@ -84,4 +86,55 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+export default db; 
+*/
+
+/*
+miercoles 11 corregido
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCvLyphETXHT5bfvVpeNJOqtmesr6H7toU",
+  authDomain: "flotaflorida-b20a9.firebaseapp.com",
+  projectId: "flotaflorida-b20a9",
+  storageBucket: "flotaflorida-b20a9.firebasestorage.app",
+  messagingSenderId: "298507215250",
+  appId: "1:298507215250:web:aa548bbff37ca5b7c0a14b",
+  measurementId: "G-9HPHQFZDG7"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+*/
+
+// Importar las funciones necesarias del SDK
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore"; // Importar Firestore
+
+// Configuración de Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCvLyphETXHT5bfvVpeNJOqtmesr6H7toU",
+  authDomain: "flotaflorida-b20a9.firebaseapp.com",
+  projectId: "flotaflorida-b20a9",
+  storageBucket: "flotaflorida-b20a9.appspot.com",
+  messagingSenderId: "298507215250",
+  appId: "1:298507215250:web:aa548bbff37ca5b7c0a14b",
+  measurementId: "G-9HPHQFZDG7",
+};
+
+// Inicializar Firebase
+const app = initializeApp(firebaseConfig);
+
+// Inicializar Firestore
+const db = getFirestore(app);
+
+// Exportar Firestore como exportación por defecto
 export default db;
